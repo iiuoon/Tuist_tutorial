@@ -1,18 +1,6 @@
-//import SwiftUI
-//
-//public struct CommonView: View {
-//    public init() {}
-//    
-//    public var body: some View {
-//        Text("I Love Tuist!")
-//    }
-//}
-//
-//#Preview {
-//    CommonView()
-//}
-
 import UIKit
+import PinLayout
+import FlexLayout
 
 public class CommonViewController: UIViewController {
     

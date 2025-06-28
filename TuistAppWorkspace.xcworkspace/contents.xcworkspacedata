@@ -17,5 +17,11 @@
       <FileRef
          location = "group:Tuist/.build/tuist-derived/Alamofire/Alamofire.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/FlexLayout/FlexLayout.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/PinLayout/PinLayout.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
