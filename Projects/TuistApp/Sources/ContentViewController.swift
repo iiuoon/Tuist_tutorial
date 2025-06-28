@@ -1,24 +1,8 @@
-//import SwiftUI
-//import TuistUI
-//import Alamofire
-//
-//public struct ContentView: View {
-//    public init() {}
-//    
-//    public var body: some View {
-//        CommonView()
-//    }
-//}
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
-
 import UIKit
 import TuistUI
 import Alamofire
+import PinLayout
+import FlexLayout
 
 public class ContentViewController: UIViewController {
     

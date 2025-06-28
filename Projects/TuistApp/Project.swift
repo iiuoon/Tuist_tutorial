@@ -20,7 +20,9 @@ let project = Project(
             resources: ["Resources/**"],
             dependencies: [
                 .project(target: "TuistUI", path: "../TuistUI"),
-                .external(name: "Alamofire")
+                .external(name: "Alamofire"),
+                .external(name: "PinLayout"),
+                .external(name: "FlexLayout")
             ]
         ),
         .target(
@@ -31,7 +33,9 @@ let project = Project(
             infoPlist: .default,
             sources: ["Tests/**"],
             resources: [],
-            dependencies: [.target(name: "TuistApp")]
+            dependencies: [
+                .target(name: "TuistApp")
+            ]
         ),
     ]
 )

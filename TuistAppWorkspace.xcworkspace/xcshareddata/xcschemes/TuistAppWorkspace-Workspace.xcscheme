@@ -28,6 +28,62 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "74F4A0C60FFE24D6B3C40707"
+               BuildableName = "FlexLayout.framework"
+               BlueprintName = "FlexLayout"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/FlexLayout/FlexLayout.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EF38434C18A9F84012C420A6"
+               BuildableName = "FlexLayoutYoga.framework"
+               BlueprintName = "FlexLayoutYoga"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/FlexLayout/FlexLayout.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4FD122C7BA22F7F2B0B2FA6B"
+               BuildableName = "FlexLayoutYogaKit.framework"
+               BlueprintName = "FlexLayoutYogaKit"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/FlexLayout/FlexLayout.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DEC02ABED86D47022B784EB7"
+               BuildableName = "PinLayout.framework"
+               BlueprintName = "PinLayout"
+               ReferencedContainer = "container:Tuist/.build/tuist-derived/PinLayout/PinLayout.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "02A902711AD4F4BF105EF48D"
                BuildableName = "TuistApp.app"
                BlueprintName = "TuistApp"

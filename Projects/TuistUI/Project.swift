@@ -9,7 +9,18 @@ let project = Project(
             product: .staticFramework,
             bundleId: "io.tuist.TuistUI",
             sources: ["Sources/**"],
-            dependencies: []
+            dependencies: [
+                .external(name: "PinLayout"),
+                .external(name: "FlexLayout")
+            ],
+            settings: .settings(configurations: [
+                .debug(name: "Debug", settings: [
+                    "GCC_PREPROCESSOR_DEFINITIONS": ["DEBUG=1", "OTHER_MACRO=1", "FLEXLAYOUT_SWIFT_PACKAGE=1"],
+                ]),
+                .release(name: "Release", settings: [
+                    "GCC_PREPROCESSOR_DEFINITIONS": ["RELEASE=1", "FLEXLAYOUT_SWIFT_PACKAGE=1"],
+                ])
+            ])
         )
     ]
 )
