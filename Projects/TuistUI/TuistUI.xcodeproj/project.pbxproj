@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		039CE232F77B075AB901EA30 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2EB990ED069F372705221C /* CommonViewController.swift */; };
+		039CE232F77B075AB901EA30 /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2EB990ED069F372705221C /* CommonView.swift */; };
 		5F6C57E6D071967BF0C0A080 /* PinLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F217E212993EB5D4A945932 /* PinLayout.framework */; };
 		B1331305E7C8DA00CE551368 /* FlexLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1CB651E1473B6AF36E2A46 /* FlexLayout.framework */; };
+		E82D896B25E3FC1659D06EFB /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B70AFCDFBAFE10EAB9CCCD /* SnapKit.framework */; };
+		F504F6C8C29F18411D98095D /* Then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE3906D81413D85370CEE56 /* Then.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +30,11 @@
 /* Begin PBXFileReference section */
 		0FAB8FA416A2526D43462527 /* TuistUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TuistUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F217E212993EB5D4A945932 /* PinLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE3906D81413D85370CEE56 /* Then.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Then.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC10E1CA9C40270D0F1A6EF /* TuistUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TuistUI-Info.plist"; sourceTree = "<group>"; };
+		92B70AFCDFBAFE10EAB9CCCD /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1CB651E1473B6AF36E2A46 /* FlexLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlexLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB2EB990ED069F372705221C /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		FB2EB990ED069F372705221C /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 			files = (
 				B1331305E7C8DA00CE551368 /* FlexLayout.framework in Frameworks */,
 				5F6C57E6D071967BF0C0A080 /* PinLayout.framework in Frameworks */,
+				E82D896B25E3FC1659D06EFB /* SnapKit.framework in Frameworks */,
+				F504F6C8C29F18411D98095D /* Then.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +71,7 @@
 		0738B9D004D289F4A7FD0B29 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				FB2EB990ED069F372705221C /* CommonViewController.swift */,
+				FB2EB990ED069F372705221C /* CommonView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -92,6 +98,8 @@
 			children = (
 				AE1CB651E1473B6AF36E2A46 /* FlexLayout.framework */,
 				5F217E212993EB5D4A945932 /* PinLayout.framework */,
+				92B70AFCDFBAFE10EAB9CCCD /* SnapKit.framework */,
+				6AE3906D81413D85370CEE56 /* Then.framework */,
 				0FAB8FA416A2526D43462527 /* TuistUI.framework */,
 			);
 			name = Products;
@@ -127,8 +135,6 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 01C11EAE9E98A625341CD5F4 /* Build configuration list for PBXProject "TuistUI" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -163,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039CE232F77B075AB901EA30 /* CommonViewController.swift in Sources */,
+				039CE232F77B075AB901EA30 /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,13 +213,7 @@
 					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYoga/FlexLayoutYoga.modulemap",
 					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYogaKit/FlexLayoutYogaKit.modulemap",
 				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYoga/FlexLayoutYoga.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYogaKit/FlexLayoutYogaKit.modulemap",
-				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYoga/FlexLayoutYoga.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYogaKit/FlexLayoutYogaKit.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistUI;
 				PRODUCT_NAME = TuistUI;
 				SDKROOT = iphoneos;
@@ -321,13 +321,7 @@
 					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYoga/FlexLayoutYoga.modulemap",
 					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYogaKit/FlexLayoutYogaKit.modulemap",
 				);
-				OTHER_SWIFT_FLAGS = (
-					"$(inherited)",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYoga/FlexLayoutYoga.modulemap",
-					"-Xcc",
-					"-fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYogaKit/FlexLayoutYogaKit.modulemap",
-				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYoga/FlexLayoutYoga.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/../../Tuist/.build/tuist-derived/FlexLayoutYogaKit/FlexLayoutYogaKit.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistUI;
 				PRODUCT_NAME = TuistUI;
 				SDKROOT = iphoneos;
@@ -335,10 +329,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-					"$(inherited)",
-					DEBUG,
-				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;

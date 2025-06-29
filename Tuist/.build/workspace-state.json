@@ -54,6 +54,40 @@
           "name" : "sourceControlCheckout"
         },
         "subpath" : "PinLayout"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "snapkit",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/SnapKit/SnapKit",
+          "name" : "SnapKit"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+            "version" : "5.7.1"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "SnapKit"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "then",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/devxoul/Then",
+          "name" : "Then"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "d41ef523faef0f911369f79c0b96815d9dbb6d7a",
+            "version" : "3.0.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "Then"
       }
     ]
   },

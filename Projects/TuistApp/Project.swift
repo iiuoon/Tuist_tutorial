@@ -22,7 +22,9 @@ let project = Project(
                 .project(target: "TuistUI", path: "../TuistUI"),
                 .external(name: "Alamofire"),
                 .external(name: "PinLayout"),
-                .external(name: "FlexLayout")
+                .external(name: "FlexLayout"),
+                .external(name: "SnapKit"),
+                .external(name: "Then")
             ]
         ),
         .target(

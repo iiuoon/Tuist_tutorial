@@ -23,5 +23,11 @@
       <FileRef
          location = "group:Tuist/.build/tuist-derived/PinLayout/PinLayout.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/SnapKit/SnapKit.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuist/.build/tuist-derived/Then/Then.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
