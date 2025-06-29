@@ -11,7 +11,9 @@ let project = Project(
             sources: ["Sources/**"],
             dependencies: [
                 .external(name: "PinLayout"),
-                .external(name: "FlexLayout")
+                .external(name: "FlexLayout"),
+                .external(name: "SnapKit"),
+                .external(name: "Then")
             ],
             settings: .settings(configurations: [
                 .debug(name: "Debug", settings: [
