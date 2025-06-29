@@ -1,5 +1,5 @@
 import UIKit
-import TuistUI
+import CommonUI
 import Alamofire
 import PinLayout
 import FlexLayout

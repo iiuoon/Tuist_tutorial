@@ -1,13 +1,13 @@
 import ProjectDescription
 
 let project = Project(
-    name: "TuistApp",
+    name: "LearnMate",
     targets: [
         .target(
-            name: "TuistApp",
+            name: "LearnMate",
             destinations: .iOS,
             product: .app,
-            bundleId: "io.tuist.TuistApp",
+            bundleId: "io.tuist.LearnMate",
             infoPlist: .extendingDefault(
                 with: [
                     "UILaunchScreen": [
@@ -19,7 +19,7 @@ let project = Project(
             sources: ["Sources/**"],
             resources: ["Resources/**"],
             dependencies: [
-                .project(target: "TuistUI", path: "../TuistUI"),
+                .project(target: "CommonUI", path: "../CommonUI"),
                 .external(name: "Alamofire"),
                 .external(name: "PinLayout"),
                 .external(name: "FlexLayout"),
@@ -28,15 +28,15 @@ let project = Project(
             ]
         ),
         .target(
-            name: "TuistAppTests",
+            name: "LearnMateTests",
             destinations: .iOS,
             product: .unitTests,
-            bundleId: "io.tuist.TuistAppTests",
+            bundleId: "io.tuist.LearnMateTests",
             infoPlist: .default,
             sources: ["Tests/**"],
             resources: [],
             dependencies: [
-                .target(name: "TuistApp")
+                .target(name: "LearnMate")
             ]
         ),
     ]

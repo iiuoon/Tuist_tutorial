@@ -1,6 +1,6 @@
 import ProjectDescription
 
 let workspace = Workspace(
-    name: "TuistAppWorkspace",
+    name: "LearnMateWorkspace",
     projects: ["Projects/**"]
 )
