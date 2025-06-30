@@ -1,2 +1,6 @@
 Tuist/.build/
 Tuist/.build/
+.DS_Store
+*.xcuserstate
+*.xcworkspacedata
+xcuserdata/
