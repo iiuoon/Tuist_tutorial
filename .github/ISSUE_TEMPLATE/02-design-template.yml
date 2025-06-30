@@ -1,5 +1,5 @@
 name: "🎨 Design Template"
-description: "For UI design additions or changes"
+description: "UI design additions or changes"
 labels: ["design"]
 body:
   - type: textarea
