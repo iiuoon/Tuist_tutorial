@@ -1,22 +1,22 @@
 name: "✨ Feature"
-description: "새로운 기능 추가"
+description: "Add a new feature"
 labels: ["feature"]
 body:
   - type: textarea
     attributes:
-      label: 📄 설명
-      description: 새로운 기능에 대한 설명을 작성해 주세요.
-      placeholder: 자세히 적을수록 좋습니다!
+      label: 📄 Description
+      description: Describe the new feature.
+      placeholder: The more detailed, the better!
     validations:
       required: true
   - type: textarea
     attributes:
-      label: ✅ 작업할 내용
-      description: 할 일을 체크박스 형태로 작성해주세요.
-      placeholder: 최대한 세분화 해서 적어주세요!
+      label: ✅ Tasks
+      description: List the tasks in checkbox format.
+      placeholder: Break down the tasks as much as possible!
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 🙋🏻 참고 자료
-      description: 참고 자료가 있다면 작성해 주세요.
+      label: 🙋🏻 References
+      description: If there are any references, please include them here.
