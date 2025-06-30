@@ -19,12 +19,11 @@ let project = Project(
             sources: ["Sources/**"],
             resources: ["Resources/**"],
             dependencies: [
-                .project(target: "CommonUI", path: "../CommonUI"),
-                .external(name: "Alamofire"),
-                .external(name: "PinLayout"),
-                .external(name: "FlexLayout"),
-                .external(name: "SnapKit"),
-                .external(name: "Then")
+                .project(target: "Home", path: "../Home"),
+                .project(target: "Chat", path: "../Chat"),
+                .project(target: "Diary", path: "../Diary"),
+                .project(target: "MyPage", path: "../MyPage"),
+                .external(name: "Swinject")
             ]
         ),
         .target(
@@ -38,6 +37,6 @@ let project = Project(
             dependencies: [
                 .target(name: "LearnMate")
             ]
-        ),
+        )
     ]
 )
